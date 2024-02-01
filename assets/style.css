@@ -1,0 +1,58 @@
+body {
+    background-color: black;
+    text-align: center;
+}
+
+header {
+    font-family: 'Permanent Marker', cursive;
+    color: whitesmoke;
+}
+
+section {
+    color: whitesmoke;
+}
+
+.quizPanel {
+    display: inline-block;
+    background-image: url(board.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 500px;
+    width: 750px;
+    color: whitesmoke;
+}
+
+.quizButtonSection {
+    min-height: 10%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 190px;
+    margin-left: 125px;
+  }
+
+.quizButtonSection > div {
+    display: flex; 
+    flex-basis: calc(45% - 40px);  
+    justify-content: center;
+    flex-direction: column;
+}
+
+.quizButtonSection > div > div {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.quizButton:hover {
+    color: rgb(0, 0, 0);
+}
+
+.quizButton {
+    margin: 20px;
+    color: whitesmoke;
+    font-family: 'Permanent Marker', cursive;
+    background: none;
+    border: none;
+    font-size: 10px;
+}
