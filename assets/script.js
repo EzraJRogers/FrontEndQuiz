@@ -23,6 +23,7 @@ const answerThreeHtml = document.getElementById("btn3");
 const answerFourHtml = document.getElementById("btn4");
 const ulElement = document.querySelector("#scoreboardshow ul");
 const scoreinput = document.getElementById("scoreinput");
+const pElement = document.getElementById("finalscore");
 
 startbutton.addEventListener('click',function (event) {
     scoreboard.style.display = 'none';
@@ -134,6 +135,7 @@ function endQuiz() {
     scoreinput.style.display = "flex";
     timeleft = 0;
     questionIdx = 0;
+    pElement.innerHTML = "Your final score is: " + score;
 }
 
 document.getElementById("scoreinputbtn").addEventListener("click", scoreStore)
