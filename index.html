@@ -4,35 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="assets/style.css"/>
+    <link rel="stylesheet" href="assets/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Sixtyfour&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+
 </head>
-
-<header>
-    <h1> Coding Quiz Challenge</h1>
-    <p> High Scores</p>
-    <p> Timer</p>
-</header>
-
-<section>
-    <header>
-        <p> Filler information that I will go back later and put in correctly.</p>
-        <button type="button">Start Quiz</button>
-    </header>
-</section>
-
-<section class="quizPanel">
-    <p id="Questionx">Question</p>
-    <div class="quizButtonSection">
-        <div><button class="quizButton" type="button">This is a long answer</button></div>
-        <div><button class="quizButton" type="button">Answer 2</button></div>
-        <div><button class="quizButton" type="button">Answer 3</button></div>
-        <div><button class="quizButton" type="button">Answer 4</button></div>
-    </div>
-</section>
 <body>
-    
+    <div class="main">
+        <header>Front End Quiz</header>
+        <div class="container">
+            <button id="scoreboardBtn">[ SCOREBOARD ]</button>
+            <p id="timer">Timer: 60</p>
+        </div>
+        <div class="start">
+            <button id="startButton">[ START ]</button>
+        </div>
+        <div class="scoreboard" id="scoreboardshow">
+            <p>Scoreboard</p>
+            <ul>
+            </ul>
+        </div>
+        <div id="scoreinput">
+            <p>All done.</p>
+            <p>Your final score is: </p>
+            <label for="scoreName">Please Enter Your Initials...</label>
+            <br>
+            <input type="text" maxlength="2" placeholder="??" id="scoreName"> 
+            <br>
+            <button id="scoreinputbtn"> [ Submit ]</button>
+        </div>
+        <div id="qandaBox">
+            <br>
+            <p class="center" id="questions"></p>
+            <div class="answerBox">
+            <div class="box"><button class="quizButton" id="btn1" type="button">1 . This is a long answer</button></div>
+            <div class="box"><button class="quizButton" id="btn2" type="button">2 . This is a long answer</button></div>
+            <div class="box"><button class="quizButton" id="btn3" type="button">3 . This is a long answer</button></div>
+            <div class="box"><button class="quizButton" id="btn4" type="button">4 . This is a long answer</button></div>
+            </div>
+         </div>
+    </div>
+<script src="assets/script.js"></script>
 </body>
 </html>

@@ -1,58 +1,121 @@
 body {
-    background-color: black;
-    text-align: center;
+    padding: 0;
+    margin: 0;
+    font-family: 'Sixtyfour';
+    color: rgb(0, 255, 4);
+    background-color: rgb(231, 236, 178);;
 }
 
 header {
-    font-family: 'Permanent Marker', cursive;
-    color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    margin-top: 5px;
 }
 
-section {
-    color: whitesmoke;
-}
-
-.quizPanel {
-    display: inline-block;
-    background-image: url(board.png);
-    background-repeat: no-repeat;
-    background-size: contain;
+.main{
+    width: 1000px;
     height: 500px;
-    width: 750px;
-    color: whitesmoke;
+    background-color: rgb(5, 155, 0);
+    margin: auto;
+    margin-top: 3.5%;
+    padding: 5px;
+    box-shadow: inset 0px 0px 15px 5px rgba(0, 0, 0, 0.5);
+    border-style: solid;
+    border-width: 50px;
+    border-left-color: rgb(204, 211, 142);
+    border-right-color: rgb(204, 211, 142);
+    border-top-color: rgb(171, 179, 99);
+    border-bottom-color: rgb(236, 244, 178);
+    border-radius: 10px;
 }
 
-.quizButtonSection {
-    min-height: 10%;
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.start {
+    display: flex;
+    justify-content: center;
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    color: rgb(0, 255, 4);
+    font-family: 'Sixtyfour';
+}
+
+button:hover {
+    color: rgb(149, 255, 151);
+}
+
+.answerBox {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
-    margin-top: 190px;
-    margin-left: 125px;
+    margin: auto;
+    width: 800px;
+    margin-top: -25px;
   }
 
-.quizButtonSection > div {
-    display: flex; 
-    flex-basis: calc(45% - 40px);  
-    justify-content: center;
-    flex-direction: column;
-}
-
-.quizButtonSection > div > div {
+.box {
+    flex: 1 0 50%; 
+    height: 175px;
     display: flex;
+    align-items: center;
+    margin: auto;
     justify-content: center;
-    flex-direction: row;
-}
+  }
 
-.quizButton:hover {
-    color: rgb(0, 0, 0);
-}
+  .scoreboard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    display: none;
+  }
+  
+  #qandaBox {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+  }
 
-.quizButton {
-    margin: 20px;
-    color: whitesmoke;
-    font-family: 'Permanent Marker', cursive;
-    background: none;
-    border: none;
-    font-size: 10px;
+  li {
+    margin-top: 5px;
+  }
+
+  #scoreinput {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  input {
+    font-family: 'Sixtyfour';
+    background-color: transparent;
+    border-style: solid;
+    width: 3%;
+    outline: none;
+    border-color:rgb(0, 255, 4);
+    color:rgb(149, 255, 151);
+  }
+
+  input:focus {
+    background: transparent;
+  }
+
+  input::placeholder {
+    color:rgb(149, 255, 151)
+  }
+
+  input[type="text"]:-webkit-autofill {
+    color: inherit !important;
 }
